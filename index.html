@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming - Question 5</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <article class="game">
+        <header>
+            <h1 class="title">HangMan Game</h1>
+        </header>
+
+        <div class="board">
+            <main class="board-word js-word">
+            </main>
+
+            <aside class="board-info">
+
+                <div class="board-input">
+                    <h2 class="subtitle">Enter a letter</h2>
+                    <div class="input-group">
+                        <input class="input-letter js-input" type="text" name="letter" id="letter">
+                        <a class="btn js-try">Try!</a>
+                    </div>
+                    <div class="input-feedback js-feedback">Character not supported or already tried!</div>
+                </div>
+
+                <div class="result js-game-result"></div>
+
+                <div class="board-status">
+                    <h2 class="subtitle">Game Status</h2>
+                    <h3 class="stat">💛 Lives: <span class="js-lives"></span></h3>
+                    <h3 class="stat">✅ <span class="js-success"></span></h3>
+                    <h3 class="stat">❌ <span class="js-fails"></span></h3>
+                </div>
+            </aside>
+        </div>
+    </article>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
